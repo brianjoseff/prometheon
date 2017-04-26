@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "simple-line-icons": "^2.3.2",
-    "gulp": "^3.9.1",
+    "gulp": "^3.9.1"
   }
 }
