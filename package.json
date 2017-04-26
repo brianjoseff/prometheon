@@ -26,9 +26,11 @@
   },
   "dependencies": {
     "simple-line-icons": "^2.3.2",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "node-static": "^0.7.9"
   },
-  "script": {
-
+  "scripts": {
+    "build": "gulp",
+    "start": "node app.js"
   }
 }
