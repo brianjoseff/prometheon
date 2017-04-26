@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="213px" height="36px" viewBox="0 0 213 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>logo_name_white</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tablet-Portrait" transform="translate(-104.000000, -807.000000)" fill="#FFFFFF">
+            <g id="logo_name_white" transform="translate(104.000000, 802.000000)">
+                <text id="PROMETHEON" font-family="Teko-Medium, Teko" font-size="36" font-weight="400" letter-spacing="2.0999999">
+                    <tspan x="41.9614325" y="34">PROMETHEON</tspan>
+                </text>
+                <path d="M13.6710098,34.4458507 L13.6710098,5.04787619 L8.8817842e-16,31.482226 L8.59277125,40.5599448 C8.65089587,37.5397339 10.8110583,35.0342863 13.6710098,34.4458507 Z" id="Combined-Shape"></path>
+                <path d="M16.2328767,34.4419761 L16.2328767,5.04787619 L29.9038865,31.482226 L21.3296865,40.5403254 C21.2624588,37.5222165 19.0960434,35.0219545 16.2328767,34.4419761 Z" id="Combined-Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
