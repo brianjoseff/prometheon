@@ -62,7 +62,7 @@ p {
             color: darken(@theme-primary, 10%);
         }
         img.logo{
-            content:url("../img/logo_name_black.svg");
+            content:url("../img/full-logo-black.png");
             height: 25px;
         }
     }
@@ -109,7 +109,7 @@ p {
                 color: white;
             }
             img.logo{
-                content:url("../img/logo_name_white.svg");
+                content:url("../img/full-logo-white.png");
             }
         }
         .nav > li > a,
@@ -129,7 +129,7 @@ p {
                     color: @theme-primary;
                 }
                 img.logo{
-                    content:url("../img/logo_name_black.svg");
+                    content:url("../img/full-logo-black.png");
                 }
             }
             .nav > li > a,
@@ -144,13 +144,50 @@ p {
 }
 
 // Homepage Header
-
+header.homepage{
+        position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: url("../img/sunset.jpg"), @theme-secondary;   
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+}
+header.bedrock{
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: url("../img/bedrock.png"), @theme-secondary;   
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+}
 header {
     position: relative;
     width: 100%;
     min-height: auto;
     overflow-y: hidden;
-    background: url("../img/flare.jpeg"), @theme-secondary;
+    background: url("../img/flare.jpeg"), @theme-secondary;   
     /* Image is centered vertically and horizontally at all times */
     background-position: center center;
     
@@ -225,6 +262,7 @@ header {
             font-size: 50px;
         }
     }
+
 }
 
 // Sections
@@ -260,19 +298,22 @@ section.download {
         }
     }
     @media(min-width: 768px) {
-        h2 {
-            font-size: 70px;
+        p {
+            font-weight:100;
         }
     }
 }
 
 section.features {
-    background: url("../img/field team.jpg"), @theme-secondary;
+    background: darkgrey, @theme-secondary;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     position: relative;
+    a{
+        color: white;
+    }
     .features-content{
         position: relative;
         z-index: 1;
@@ -406,6 +447,78 @@ section.contact {
     }
 }
 
+section.bedrock-section{
+    border-bottom: solid 1px #b9b9b9;
+    h1 {
+        font-family: 'Poppins';
+        font-size: 36px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+        color: #3a3a3a;
+    }
+}
+
+section.bedrock-cta {
+    position: relative;
+    .background-cover;
+    background-position: center;
+    background-image: url('../img/striation.jpg');
+    padding: 100px 0;
+    .cta-content {
+        position: relative;
+        z-index: 1;
+        h1 {
+            font-family: 'Poppins';
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            font-weight: 100;
+            color: white;
+        }
+        a {
+            color: lightgrey;
+            text-decoration: underline;
+        }
+        h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+            color: white;
+            max-width: 450px;
+            font-size: 50px;
+        }
+        @media (min-width: 768px) {
+            h2 {
+                font-size: 80px;
+            }
+        }
+        label {
+            color: @gray-lighter;
+        }
+        form {
+            border: solid 2px @gray-light;
+            padding: 15px;
+            background-color: fade(black, 50%);
+        }
+    }
+    .overlay {
+        height: 100%;
+        width: 100%;
+        background-color: fade(black, 50%);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+
 footer {
     background-color: @gray-darker;
     padding: 25px 0;
@@ -460,9 +573,9 @@ footer {
     &:focus,
     &:active,
     &.active {
-        color: white;
-        background-color: @theme-primary;
-        border-color: @theme-primary;
+        color: #666;
+        background-color: white;
+        border-color: white;
     }
 }
 
@@ -473,7 +586,8 @@ footer {
 
 .btn-xl {
     padding: 15px 45px;
-    font-size: 11px;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 // Extras

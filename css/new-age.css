@@ -79,7 +79,7 @@ p {
   color: #000203;
 }
 .navbar-default .navbar-header .navbar-brand img.logo {
-  content: url("../img/logo_name_black.svg");
+  content: url("../img/full-logo-black.png");
   height: 25px;
 }
 .navbar-default .navbar-header .navbar-toggle {
@@ -126,7 +126,7 @@ p {
     color: white;
   }
   .navbar-default .navbar-header .navbar-brand img.logo {
-    content: url("../img/logo_name_white.svg");
+    content: url("../img/full-logo-white.png");
   }
   .navbar-default .nav > li > a,
   .navbar-default .nav > li > a:focus {
@@ -148,7 +148,7 @@ p {
     color: #002036;
   }
   .navbar-default.affix .navbar-header .navbar-brand img.logo {
-    content: url("../img/logo_name_black.svg");
+    content: url("../img/full-logo-black.png");
   }
   .navbar-default.affix .nav > li > a,
   .navbar-default.affix .nav > li > a:focus {
@@ -158,6 +158,38 @@ p {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #002036;
   }
+}
+header.homepage {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  background: url("../img/sunset.jpg"), #004366;
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+}
+header.bedrock {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  overflow-y: hidden;
+  background: url("../img/bedrock.png"), #004366;
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+  background-attachment: fixed;
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
 }
 header {
   position: relative;
@@ -266,17 +298,20 @@ section.download .badges .badge-link img {
   }
 }
 @media (min-width: 768px) {
-  section.download h2 {
-    font-size: 70px;
+  section.download p {
+    font-weight: 100;
   }
 }
 section.features {
-  background: url("../img/field team.jpg"), #004366;
+  background: darkgrey, #004366;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
+}
+section.features a {
+  color: white;
 }
 section.features .features-content {
   position: relative;
@@ -404,6 +439,78 @@ section.contact ul.list-social li.social-google-plus a {
 section.contact ul.list-social li.social-google-plus a:hover {
   background-color: #d73925;
 }
+section.bedrock-section {
+  border-bottom: solid 1px #b9b9b9;
+}
+section.bedrock-section h1 {
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+section.bedrock-section p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #3a3a3a;
+}
+section.bedrock-cta {
+  position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url('../img/striation.jpg');
+  padding: 100px 0;
+}
+section.bedrock-cta .cta-content {
+  position: relative;
+  z-index: 1;
+}
+section.bedrock-cta .cta-content h1 {
+  font-family: 'Poppins';
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+section.bedrock-cta .cta-content p {
+  font-size: 18px;
+  font-weight: 100;
+  color: white;
+}
+section.bedrock-cta .cta-content a {
+  color: lightgrey;
+  text-decoration: underline;
+}
+section.bedrock-cta .cta-content h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: white;
+  max-width: 450px;
+  font-size: 50px;
+}
+@media (min-width: 768px) {
+  section.bedrock-cta .cta-content h2 {
+    font-size: 80px;
+  }
+}
+section.bedrock-cta .cta-content label {
+  color: #eeeeee;
+}
+section.bedrock-cta .cta-content form {
+  border: solid 2px #777777;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+section.bedrock-cta .overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 footer {
   background-color: #222222;
   padding: 25px 0;
@@ -448,9 +555,9 @@ footer ul li a.active {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: white;
-  background-color: #002036;
-  border-color: #002036;
+  color: #666;
+  background-color: white;
+  border-color: white;
 }
 .btn {
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
@@ -460,7 +567,8 @@ footer ul li a.active {
 }
 .btn-xl {
   padding: 15px 45px;
-  font-size: 11px;
+  font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 ::-moz-selection {
   color: white;
