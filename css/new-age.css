@@ -460,7 +460,7 @@ section.bedrock-cta {
   background-size: cover;
   -o-background-size: cover;
   background-position: center;
-  background-image: url('../img/striation.jpg');
+  background-image: url('../img/bigsur.jpg');
   padding: 100px 0;
 }
 section.bedrock-cta .cta-content {
@@ -500,6 +500,7 @@ section.bedrock-cta .cta-content label {
 }
 section.bedrock-cta .cta-content form {
   border: solid 2px #777777;
+  border-radius: 5px;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.5);
 }
